@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CEE52D22AD7C8B4001C155C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE52D12AD7C8B4001C155C /* AppDelegate.swift */; };
+		6CEE52D42AD7C8B4001C155C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE52D32AD7C8B4001C155C /* SceneDelegate.swift */; };
+		6CEE52D62AD7C8B4001C155C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE52D52AD7C8B4001C155C /* WelcomeViewController.swift */; };
+		6CEE52D92AD7C8B4001C155C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CEE52D72AD7C8B4001C155C /* Main.storyboard */; };
+		6CEE52DB2AD7C8B7001C155C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CEE52DA2AD7C8B7001C155C /* Assets.xcassets */; };
+		6CEE52DE2AD7C8B7001C155C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CEE52DC2AD7C8B7001C155C /* LaunchScreen.storyboard */; };
+		6CEE52EE2AD7CB17001C155C /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE52ED2AD7CB17001C155C /* AuthManager.swift */; };
+		6CEE52F22AD7CFAC001C155C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE52F12AD7CFAC001C155C /* SignInViewController.swift */; };
+		6CEE52F42AD7CFC3001C155C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE52F32AD7CFC3001C155C /* SignUpViewController.swift */; };
+		6CEE52F62AD7CFE7001C155C /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE52F52AD7CFE7001C155C /* ForgetPasswordViewController.swift */; };
+		6CEE52F82AD80128001C155C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE52F72AD80128001C155C /* HomeViewController.swift */; };
+		6CEE52FA2AD8013D001C155C /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE52F92AD8013D001C155C /* ShopViewController.swift */; };
+		6CEE52FC2AD8016C001C155C /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE52FB2AD8016C001C155C /* WishlistViewController.swift */; };
+		6CEE52FE2AD801DB001C155C /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE52FD2AD801DB001C155C /* CartViewController.swift */; };
+		6CEE53002AD801F3001C155C /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE52FF2AD801F3001C155C /* MeViewController.swift */; };
+		6CEE53042AD802B9001C155C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE53032AD802B9001C155C /* TabBarViewController.swift */; };
+		6CFEBB2F2AD9557C0014D348 /* SliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFEBB2D2AD9557C0014D348 /* SliderCell.swift */; };
+		6CFEBB302AD9557C0014D348 /* SliderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CFEBB2E2AD9557C0014D348 /* SliderCell.xib */; };
+		6CFEBB342AD95C430014D348 /* SliderImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFEBB322AD95C430014D348 /* SliderImageCell.swift */; };
+		6CFEBB352AD95C430014D348 /* SliderImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CFEBB332AD95C430014D348 /* SliderImageCell.xib */; };
+		6CFEBB372AD96DAD0014D348 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFEBB362AD96DAD0014D348 /* Model.swift */; };
+		A3DE2EE47F3B4B583ABAAC5D /* Pods_Oreo_Fashion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6DF85FDE2ED3696B7C006B /* Pods_Oreo_Fashion.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3AF485842D48250C3EFF833F /* Pods-Oreo Fashion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oreo Fashion.debug.xcconfig"; path = "Target Support Files/Pods-Oreo Fashion/Pods-Oreo Fashion.debug.xcconfig"; sourceTree = "<group>"; };
+		461B174B73D383F6FBF8436E /* Pods-Oreo Fashion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Oreo Fashion.release.xcconfig"; path = "Target Support Files/Pods-Oreo Fashion/Pods-Oreo Fashion.release.xcconfig"; sourceTree = "<group>"; };
+		6CEE52CE2AD7C8B4001C155C /* Oreo Fashion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Oreo Fashion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CEE52D12AD7C8B4001C155C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6CEE52D32AD7C8B4001C155C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6CEE52D52AD7C8B4001C155C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		6CEE52D82AD7C8B4001C155C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CEE52DA2AD7C8B7001C155C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CEE52DD2AD7C8B7001C155C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6CEE52DF2AD7C8B7001C155C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CEE52ED2AD7CB17001C155C /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		6CEE52F12AD7CFAC001C155C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		6CEE52F32AD7CFC3001C155C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		6CEE52F52AD7CFE7001C155C /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		6CEE52F72AD80128001C155C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6CEE52F92AD8013D001C155C /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		6CEE52FB2AD8016C001C155C /* WishlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewController.swift; sourceTree = "<group>"; };
+		6CEE52FD2AD801DB001C155C /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		6CEE52FF2AD801F3001C155C /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		6CEE53032AD802B9001C155C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		6CFEBB2D2AD9557C0014D348 /* SliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCell.swift; sourceTree = "<group>"; };
+		6CFEBB2E2AD9557C0014D348 /* SliderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderCell.xib; sourceTree = "<group>"; };
+		6CFEBB322AD95C430014D348 /* SliderImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderImageCell.swift; sourceTree = "<group>"; };
+		6CFEBB332AD95C430014D348 /* SliderImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderImageCell.xib; sourceTree = "<group>"; };
+		6CFEBB362AD96DAD0014D348 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		AC6DF85FDE2ED3696B7C006B /* Pods_Oreo_Fashion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Oreo_Fashion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CEE52CB2AD7C8B4001C155C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3DE2EE47F3B4B583ABAAC5D /* Pods_Oreo_Fashion.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		015FC166DAF6141E6592414E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AF485842D48250C3EFF833F /* Pods-Oreo Fashion.debug.xcconfig */,
+				461B174B73D383F6FBF8436E /* Pods-Oreo Fashion.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		36E589A67A9D058534E6AD02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC6DF85FDE2ED3696B7C006B /* Pods_Oreo_Fashion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CEE52C52AD7C8B4001C155C = {
+			isa = PBXGroup;
+			children = (
+				6CEE52D02AD7C8B4001C155C /* Oreo Fashion */,
+				6CEE52CF2AD7C8B4001C155C /* Products */,
+				015FC166DAF6141E6592414E /* Pods */,
+				36E589A67A9D058534E6AD02 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6CEE52CF2AD7C8B4001C155C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CEE52CE2AD7C8B4001C155C /* Oreo Fashion.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CEE52D02AD7C8B4001C155C /* Oreo Fashion */ = {
+			isa = PBXGroup;
+			children = (
+				6CEE52EA2AD7C966001C155C /* Resourses */,
+				6CEE52E92AD7C959001C155C /* Managers */,
+				6CFEBB2C2AD954D60014D348 /* CustomCells */,
+				6CEE52E82AD7C928001C155C /* ViewModels */,
+				6CEE52E72AD7C919001C155C /* Models */,
+				6CEE52E62AD7C90A001C155C /* Views */,
+				6CEE52E52AD7C8F9001C155C /* Controllers */,
+				6CEE52DF2AD7C8B7001C155C /* Info.plist */,
+			);
+			path = "Oreo Fashion";
+			sourceTree = "<group>";
+		};
+		6CEE52E52AD7C8F9001C155C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6CEE53022AD802A1001C155C /* TabBar */,
+				6CEE52F02AD7CF81001C155C /* Auth */,
+				6CEE52EF2AD7CC20001C155C /* Other */,
+				6CEE52EB2AD7CACD001C155C /* Core */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6CEE52E62AD7C90A001C155C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6CEE52DC2AD7C8B7001C155C /* LaunchScreen.storyboard */,
+				6CEE52D72AD7C8B4001C155C /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6CEE52E72AD7C919001C155C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6CFEBB362AD96DAD0014D348 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6CEE52E82AD7C928001C155C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6CEE52E92AD7C959001C155C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				6CEE52ED2AD7CB17001C155C /* AuthManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		6CEE52EA2AD7C966001C155C /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				6CEE52D12AD7C8B4001C155C /* AppDelegate.swift */,
+				6CEE52D32AD7C8B4001C155C /* SceneDelegate.swift */,
+				6CEE52DA2AD7C8B7001C155C /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		6CEE52EB2AD7CACD001C155C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6CEE52F72AD80128001C155C /* HomeViewController.swift */,
+				6CEE52F92AD8013D001C155C /* ShopViewController.swift */,
+				6CEE52FB2AD8016C001C155C /* WishlistViewController.swift */,
+				6CEE52FD2AD801DB001C155C /* CartViewController.swift */,
+				6CEE52FF2AD801F3001C155C /* MeViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6CEE52EF2AD7CC20001C155C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				6CEE52D52AD7C8B4001C155C /* WelcomeViewController.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		6CEE52F02AD7CF81001C155C /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				6CEE52F12AD7CFAC001C155C /* SignInViewController.swift */,
+				6CEE52F32AD7CFC3001C155C /* SignUpViewController.swift */,
+				6CEE52F52AD7CFE7001C155C /* ForgetPasswordViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		6CEE53022AD802A1001C155C /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				6CEE53032AD802B9001C155C /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		6CFEBB2C2AD954D60014D348 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				6CFEBB312AD95BE00014D348 /* Extras */,
+				6CFEBB2D2AD9557C0014D348 /* SliderCell.swift */,
+				6CFEBB2E2AD9557C0014D348 /* SliderCell.xib */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		6CFEBB312AD95BE00014D348 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				6CFEBB322AD95C430014D348 /* SliderImageCell.swift */,
+				6CFEBB332AD95C430014D348 /* SliderImageCell.xib */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CEE52CD2AD7C8B4001C155C /* Oreo Fashion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CEE52E22AD7C8B7001C155C /* Build configuration list for PBXNativeTarget "Oreo Fashion" */;
+			buildPhases = (
+				D36EF344DCF7AFA37C7F4A03 /* [CP] Check Pods Manifest.lock */,
+				6CEE52CA2AD7C8B4001C155C /* Sources */,
+				6CEE52CB2AD7C8B4001C155C /* Frameworks */,
+				6CEE52CC2AD7C8B4001C155C /* Resources */,
+				81139A7E1223634B66CD54F9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Oreo Fashion";
+			productName = "Oreo Fashion";
+			productReference = 6CEE52CE2AD7C8B4001C155C /* Oreo Fashion.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CEE52C62AD7C8B4001C155C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					6CEE52CD2AD7C8B4001C155C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 6CEE52C92AD7C8B4001C155C /* Build configuration list for PBXProject "Oreo Fashion" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CEE52C52AD7C8B4001C155C;
+			productRefGroup = 6CEE52CF2AD7C8B4001C155C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CEE52CD2AD7C8B4001C155C /* Oreo Fashion */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CEE52CC2AD7C8B4001C155C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CEE52DE2AD7C8B7001C155C /* LaunchScreen.storyboard in Resources */,
+				6CFEBB352AD95C430014D348 /* SliderImageCell.xib in Resources */,
+				6CEE52DB2AD7C8B7001C155C /* Assets.xcassets in Resources */,
+				6CFEBB302AD9557C0014D348 /* SliderCell.xib in Resources */,
+				6CEE52D92AD7C8B4001C155C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		81139A7E1223634B66CD54F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Oreo Fashion/Pods-Oreo Fashion-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Oreo Fashion/Pods-Oreo Fashion-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Oreo Fashion/Pods-Oreo Fashion-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D36EF344DCF7AFA37C7F4A03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Oreo Fashion-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CEE52CA2AD7C8B4001C155C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CEE52F42AD7CFC3001C155C /* SignUpViewController.swift in Sources */,
+				6CFEBB342AD95C430014D348 /* SliderImageCell.swift in Sources */,
+				6CEE52D62AD7C8B4001C155C /* WelcomeViewController.swift in Sources */,
+				6CEE52FA2AD8013D001C155C /* ShopViewController.swift in Sources */,
+				6CEE52EE2AD7CB17001C155C /* AuthManager.swift in Sources */,
+				6CEE52F82AD80128001C155C /* HomeViewController.swift in Sources */,
+				6CEE52D22AD7C8B4001C155C /* AppDelegate.swift in Sources */,
+				6CFEBB372AD96DAD0014D348 /* Model.swift in Sources */,
+				6CEE53002AD801F3001C155C /* MeViewController.swift in Sources */,
+				6CEE52F62AD7CFE7001C155C /* ForgetPasswordViewController.swift in Sources */,
+				6CFEBB2F2AD9557C0014D348 /* SliderCell.swift in Sources */,
+				6CEE52FE2AD801DB001C155C /* CartViewController.swift in Sources */,
+				6CEE52FC2AD8016C001C155C /* WishlistViewController.swift in Sources */,
+				6CEE53042AD802B9001C155C /* TabBarViewController.swift in Sources */,
+				6CEE52F22AD7CFAC001C155C /* SignInViewController.swift in Sources */,
+				6CEE52D42AD7C8B4001C155C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6CEE52D72AD7C8B4001C155C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CEE52D82AD7C8B4001C155C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6CEE52DC2AD7C8B7001C155C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CEE52DD2AD7C8B7001C155C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CEE52E02AD7C8B7001C155C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6CEE52E12AD7C8B7001C155C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6CEE52E32AD7C8B7001C155C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AF485842D48250C3EFF833F /* Pods-Oreo Fashion.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PZS4FN8TL6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Oreo Fashion/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Swift.Oreo-Fashion";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6CEE52E42AD7C8B7001C155C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 461B174B73D383F6FBF8436E /* Pods-Oreo Fashion.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PZS4FN8TL6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Oreo Fashion/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Swift.Oreo-Fashion";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CEE52C92AD7C8B4001C155C /* Build configuration list for PBXProject "Oreo Fashion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CEE52E02AD7C8B7001C155C /* Debug */,
+				6CEE52E12AD7C8B7001C155C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CEE52E22AD7C8B7001C155C /* Build configuration list for PBXNativeTarget "Oreo Fashion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CEE52E32AD7C8B7001C155C /* Debug */,
+				6CEE52E42AD7C8B7001C155C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6CEE52C62AD7C8B4001C155C /* Project object */;
+}
