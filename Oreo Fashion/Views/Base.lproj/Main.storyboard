@@ -69,7 +69,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SUd-ft-iUM">
                                 <rect key="frame" x="0.0" y="103" width="393" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VnR-5g-Dsj">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VnR-5g-Dsj">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -98,28 +98,40 @@
                     </view>
                     <navigationItem key="navigationItem" id="Qod-Dn-hdU"/>
                     <connections>
-                        <outlet property="collectionView" destination="SUd-ft-iUM" id="N8F-Iq-Okb"/>
+                        <outlet property="collectionView" destination="SUd-ft-iUM" id="5Wz-x8-Wpb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nU7-Kg-Rn6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1527" y="1844"/>
         </scene>
-        <!--Shop-->
+        <!--Shop View Controller-->
         <scene sceneID="qGz-2J-E6F">
             <objects>
                 <viewController storyboardIdentifier="ShopViewController" id="jP3-yD-6r8" customClass="ShopViewController" customModule="Oreo_Fashion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zms-QG-3Ia">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Lw3-g6-Iz7">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="W0x-uu-Tyw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W0x-uu-Tyw" firstAttribute="trailing" secondItem="Lw3-g6-Iz7" secondAttribute="trailing" id="Inp-Ey-zsP"/>
+                            <constraint firstItem="Lw3-g6-Iz7" firstAttribute="leading" secondItem="W0x-uu-Tyw" secondAttribute="leading" id="KBw-cu-Uri"/>
+                            <constraint firstItem="Lw3-g6-Iz7" firstAttribute="top" secondItem="W0x-uu-Tyw" secondAttribute="top" id="RCE-u3-pqP"/>
+                            <constraint firstItem="W0x-uu-Tyw" firstAttribute="bottom" secondItem="Lw3-g6-Iz7" secondAttribute="bottom" id="eJA-fS-IuD"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Shop" image="magnifyingglass" catalog="system" id="4qW-ra-vip"/>
+                    <navigationItem key="navigationItem" id="Ks2-ES-nYw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F8S-HE-YyQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3507.6335877862593" y="1107.7464788732395"/>
+            <point key="canvasLocation" x="2828" y="1844"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="dwM-9a-ViI">
@@ -417,63 +429,99 @@
                     </tabBar>
                     <connections>
                         <segue destination="ijn-Kc-a5x" kind="relationship" relationship="viewControllers" id="pWb-ll-SeY"/>
-                        <segue destination="jP3-yD-6r8" kind="relationship" relationship="viewControllers" id="bVr-jK-LTK"/>
-                        <segue destination="RoK-Jy-Iys" kind="relationship" relationship="viewControllers" id="x9Z-hQ-QxV"/>
-                        <segue destination="CTm-7b-kyf" kind="relationship" relationship="viewControllers" id="LoY-Pg-i9y"/>
-                        <segue destination="hxv-YZ-xjU" kind="relationship" relationship="viewControllers" id="ppr-IZ-obo"/>
+                        <segue destination="wzk-UF-vq6" kind="relationship" relationship="viewControllers" id="bVr-jK-LTK"/>
+                        <segue destination="RxZ-iN-wgN" kind="relationship" relationship="viewControllers" id="x9Z-hQ-QxV"/>
+                        <segue destination="Y75-GD-zyI" kind="relationship" relationship="viewControllers" id="LoY-Pg-i9y"/>
+                        <segue destination="jS6-7j-G5H" kind="relationship" relationship="viewControllers" id="ppr-IZ-obo"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="msE-5w-4i4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2581" y="370"/>
         </scene>
-        <!--Wishlist-->
+        <!--Wishlist View Controller-->
         <scene sceneID="9yq-GP-Bpa">
             <objects>
                 <viewController storyboardIdentifier="WishlistViewController" id="RoK-Jy-Iys" customClass="WishlistViewController" customModule="Oreo_Fashion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UTM-pf-yGZ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hkK-hu-nIH">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gJ9-eG-VtT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gJ9-eG-VtT" firstAttribute="bottom" secondItem="hkK-hu-nIH" secondAttribute="bottom" id="5Qk-O5-W87"/>
+                            <constraint firstItem="hkK-hu-nIH" firstAttribute="top" secondItem="gJ9-eG-VtT" secondAttribute="top" id="USg-2K-raP"/>
+                            <constraint firstItem="hkK-hu-nIH" firstAttribute="leading" secondItem="gJ9-eG-VtT" secondAttribute="leading" id="YWC-WX-Obz"/>
+                            <constraint firstItem="gJ9-eG-VtT" firstAttribute="trailing" secondItem="hkK-hu-nIH" secondAttribute="trailing" id="iHs-J6-VSQ"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Wishlist" image="star" catalog="system" id="NU7-FC-Xaw"/>
+                    <navigationItem key="navigationItem" id="xTJ-Uv-D9n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bne-B6-vIJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4205.3435114503818" y="1107.7464788732395"/>
+            <point key="canvasLocation" x="3950" y="1844"/>
         </scene>
-        <!--Cart-->
+        <!--Cart View Controller-->
         <scene sceneID="omi-Un-PBm">
             <objects>
                 <viewController storyboardIdentifier="CartViewController" id="CTm-7b-kyf" customClass="CartViewController" customModule="Oreo_Fashion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lW9-z0-9zH">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9De-7c-hm6">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="PeM-e9-OfD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9De-7c-hm6" firstAttribute="top" secondItem="PeM-e9-OfD" secondAttribute="top" id="RD6-HQ-nsY"/>
+                            <constraint firstItem="9De-7c-hm6" firstAttribute="leading" secondItem="PeM-e9-OfD" secondAttribute="leading" id="WkE-x3-QKg"/>
+                            <constraint firstItem="PeM-e9-OfD" firstAttribute="bottom" secondItem="9De-7c-hm6" secondAttribute="bottom" id="eqM-iy-RXQ"/>
+                            <constraint firstItem="PeM-e9-OfD" firstAttribute="trailing" secondItem="9De-7c-hm6" secondAttribute="trailing" id="iwm-1N-cxU"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Cart" image="cart" catalog="system" id="BCE-kI-5qR"/>
+                    <navigationItem key="navigationItem" id="tlx-Vp-ePZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tTM-vm-lZs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4901.5267175572517" y="1107.7464788732395"/>
+            <point key="canvasLocation" x="5135" y="1844"/>
         </scene>
-        <!--Me-->
+        <!--Me View Controller-->
         <scene sceneID="2TM-S7-8NA">
             <objects>
                 <viewController storyboardIdentifier="MeViewController" id="hxv-YZ-xjU" customClass="MeViewController" customModule="Oreo_Fashion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gtz-x5-zLc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SaC-or-sbJ">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="t0W-ji-ls0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="t0W-ji-ls0" firstAttribute="bottom" secondItem="SaC-or-sbJ" secondAttribute="bottom" id="9Tv-CG-7NI"/>
+                            <constraint firstItem="SaC-or-sbJ" firstAttribute="leading" secondItem="t0W-ji-ls0" secondAttribute="leading" id="Ovi-MW-blx"/>
+                            <constraint firstItem="t0W-ji-ls0" firstAttribute="trailing" secondItem="SaC-or-sbJ" secondAttribute="trailing" id="bYp-CE-Ufq"/>
+                            <constraint firstItem="SaC-or-sbJ" firstAttribute="top" secondItem="t0W-ji-ls0" secondAttribute="top" id="yz6-Pt-Vxa"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Me" image="person" catalog="system" id="H9V-z2-Wkq"/>
+                    <navigationItem key="navigationItem" id="Isq-sf-D3O"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RMs-WF-o6F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5663.3587786259541" y="1107.7464788732395"/>
+            <point key="canvasLocation" x="6373" y="1844"/>
         </scene>
         <!--Home-->
         <scene sceneID="Yb8-sS-xKt">
@@ -493,6 +541,82 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PQa-G0-nS4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1890.8396946564885" y="1107.7464788732395"/>
+        </scene>
+        <!--Shop-->
+        <scene sceneID="NTL-jX-S8g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wzk-UF-vq6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Shop" image="magnifyingglass" catalog="system" id="4qW-ra-vip"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zSa-gk-MOo">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jP3-yD-6r8" kind="relationship" relationship="rootViewController" id="LXh-Tc-unG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ke-8C-Q6P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3326" y="1108"/>
+        </scene>
+        <!--Wishlist-->
+        <scene sceneID="iOy-ja-Lje">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RxZ-iN-wgN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Wishlist" image="star" catalog="system" id="NU7-FC-Xaw"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="d01-sF-LKG">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RoK-Jy-Iys" kind="relationship" relationship="rootViewController" id="Sw9-kc-vqe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wqo-xE-ilf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4588.5496183206105" y="1107.7464788732395"/>
+        </scene>
+        <!--Cart-->
+        <scene sceneID="SR9-B0-Eju">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y75-GD-zyI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cart" image="cart" catalog="system" id="BCE-kI-5qR"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sow-Yh-5sa">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CTm-7b-kyf" kind="relationship" relationship="rootViewController" id="P79-xH-nAy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LHQ-g6-37V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5788.5496183206105" y="1107.7464788732395"/>
+        </scene>
+        <!--Me-->
+        <scene sceneID="lCX-Pg-xJg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jS6-7j-G5H" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Me" image="person" catalog="system" id="H9V-z2-Wkq"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O05-qX-Yv9">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hxv-YZ-xjU" kind="relationship" relationship="rootViewController" id="PpE-ru-5lM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sud-4K-8Vy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6919.8473282442746" y="1107.7464788732395"/>
         </scene>
     </scenes>
     <resources>

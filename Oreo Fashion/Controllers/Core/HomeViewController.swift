@@ -12,6 +12,7 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var tableView: UITableView!
     var models = [Model]()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +36,7 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
         
         //let nib1 = UINib(nibName: "SliderCell", bundle: nil)
         print("......",models.count-1)
+        collectionView.reloadData()
     }
     
     @objc func MenuDrawer(){
@@ -45,8 +47,15 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
         print("CartDrawer")
     }
     
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        if section == 0 {
+                return 1  // One item in the first section
+            }
+            return 0
     }
     //MARK: - UICollectionViewDelegateFlowLayout
 
@@ -69,6 +78,7 @@ class HomeViewController: UIViewController,UICollectionViewDelegate,UICollection
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SliderCell.identifier, for: indexPath) as! SliderCell
         cell.configure(with: models)
         cell.count = models.count
+        cell.backgroundColor = .red
         return cell
     }
 }

@@ -12,6 +12,7 @@ class SliderImageCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var viewGoBtn: UIView!
     @IBAction func goBtn(_ sender: Any) {
+        print("OK")
     }
     static let identifier = "SliderImageCell"
     override func awakeFromNib() {

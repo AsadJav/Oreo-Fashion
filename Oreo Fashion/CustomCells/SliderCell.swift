@@ -31,6 +31,7 @@ class SliderCell: UICollectionViewCell,UICollectionViewDelegate,UICollectionView
         //print(count,".....rer.",models.count-1)
         
     }
+    
     @objc func slideToNext(){
         collectionView.isPagingEnabled = false
         pageCtrl.numberOfPages = count
@@ -53,6 +54,7 @@ class SliderCell: UICollectionViewCell,UICollectionViewDelegate,UICollectionView
         self.models = model
         collectionView.reloadData()
     }
+    
     //MARK: - NumberOfSections
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return models.count
